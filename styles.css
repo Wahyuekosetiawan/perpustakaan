@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang yang lebih lembut */
+    color: #333; /* Warna teks yang lebih gelap */
+}
+
+header {
+    background-color: #4CAF50; /* Warna header */
+    color: white;
+    padding: 20px; /* Padding yang lebih besar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+}
+
+#logo {
+    width: 80px; /* Ukuran logo yang lebih kecil */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 0; /* Menghilangkan margin default */
+    display: flex; /* Menampilkan item dalam satu baris */
+}
+
+nav ul li {
+    margin-left: 20px; /* Jarak antar item menu */
+}
+
+footer {
+    background-color: #333; /* Warna footer */
+    color: white;
+    text-align: center;
+    padding: 20px; /* Padding yang lebih besar */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    background-color: white; /* Latar belakang putih untuk konten utama */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk konten utama */
+    margin: 20px; /* Margin untuk memberikan jarak dari tepi */
+}
+
+form {
+    margin-bottom: 20px; /* Jarak bawah untuk formulir */
+}
+
+label {
+    display: block; /* Membuat label menjadi blok */
+    margin-bottom: 5px; /* Jarak bawah label */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%; /* Lebar penuh untuk input */
+    padding: 10px; /* Padding untuk input */
+    margin-bottom: 15px; /* Jarak bawah input */
+    border: 1px solid #ccc; /* Border yang lebih lembut */
+    border-radius: 4px; /* Sudut membulat */
+}
+
+button {
+    background-color: #4CAF50; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 15px; /* Padding tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna tombol saat hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px; /* Padding yang lebih besar */
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50; /* Warna header tabel */
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Efek hover pada baris tabel */
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Jarak antar item menu pada perangkat kecil */
+    }
+
+    main {
+        margin: 10px; /* Mengurangi margin pada perangkat kecil */
+        padding: 15px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    #logo {
+        width: 60px; /* Ukuran logo yang lebih kecil pada perangkat kecil */
+    }
+}
